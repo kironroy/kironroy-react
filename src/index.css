@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Manrope';
@@ -22,4 +26,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Manrope', sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; /* Adjust the size as needed */
+  }
 }
