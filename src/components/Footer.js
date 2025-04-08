@@ -5,7 +5,7 @@ const Footer = () => {
   const today = new Date();
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
-    month: "short",
+    month: "long",
     day: "numeric",
     year: "numeric",
   })
