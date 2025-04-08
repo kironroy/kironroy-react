@@ -23,7 +23,7 @@ const projects = [
   {
     id: 4,
     title: "Dreamscape",
-    description: "Digital Art. Created with React",
+    description: "Digital Art. Website created with React.",
     link: "https://dreamscapegallery.netlify.app/",
   },
   {
