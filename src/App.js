@@ -5,6 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
+import ErrorPage from "./components/404";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       </main>
       <Footer />
       <BackToTop />
+      <ErrorPage />
     </div>
   );
 }
