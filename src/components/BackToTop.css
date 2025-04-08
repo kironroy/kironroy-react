@@ -5,9 +5,9 @@
   background: rgb(253, 253, 6);
   color: #141414;
   padding: 10px 15px;
-  border-radius: 50px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background 0.3s ease;
   opacity: 90%;
