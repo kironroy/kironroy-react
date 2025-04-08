@@ -16,8 +16,8 @@ function App() {
         <About />
         <Contact />
       </main>
-      <BackToTop />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
