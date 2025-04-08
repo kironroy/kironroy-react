@@ -1,0 +1,38 @@
+
+
+.header {
+  background: #191919;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav li {
+  margin-left: 15px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+
+h1,h3 {
+  font-weight: 700;
+}
