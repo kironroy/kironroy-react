@@ -13,7 +13,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>&copy; 2025 Kiron Roy </p>
         <p>{formattedDate}</p>
       </div>
     </footer>

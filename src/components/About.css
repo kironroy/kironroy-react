@@ -15,3 +15,12 @@
   line-height: 1.6;
   color: #222;
 }
+
+.about-image {
+  max-width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 5px;
+  display: block;
+  object-fit: cover;
+}

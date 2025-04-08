@@ -6,6 +6,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="container">
         <h2>About Me</h2>
+        <img src={require("../kiron.jpeg")} alt="Kiron Roy" className="about-image" />
         <p>
           Hi, I'm Kiron Roy! Welcome to my portfolio. I'm a passionate developer
           and creator, always excited about crafting innovative projects and
