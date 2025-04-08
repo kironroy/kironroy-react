@@ -11,69 +11,68 @@ const projects = [
   {
     id: 2,
     title: "Artwork",
-    description: "A collection of digital artworks and creative designs.",
+    description: "A collection of my artwork.",
     link: "https://kironroy.dev/art",
   },
   {
     id: 3,
     title: "Console.Log()",
-    description: "Experimental coding projects and fun tech logs.",
+    description: "Fun with console.log()in the browser.",
     link: "https://js-console-log.netlify.app/",
   },
   {
     id: 4,
     title: "Dreamscape",
-    description:
-      "A project exploring the connection between technology and nature.",
+    description: "Digital Art. Created with React",
     link: "https://dreamscapegallery.netlify.app/",
   },
   {
     id: 5,
     title: "Mathematics",
-    description:
-      "Projects integrating math concepts with programming challenges.",
+    description: "Mathematics with JavaScript.",
     link: "https://kironroy.dev/mathjs",
   },
   {
     id: 6,
     title: "Mutual Funds",
-    description: "Finance-oriented web apps for mutual funds and investments.",
+    description: "Information on Mutual Funds.",
     link: "https://kironroy.dev/mutualfunds",
   },
   {
     id: 7,
     title: "Nash Equilibrium",
-    description: "Game theory and strategy-related projects.",
+    description: "Nash Equilibrium and wildfires.",
     link: "https://kironroy.dev/nash",
   },
   {
     id: 8,
     title: "Stoic Notes",
-    description: "Digital notes and reflections on Stoicism and philosophy.",
+    description:
+      "Breakfast with Senecia book summary.",
     link: "https://kironroy.dev/stoic",
   },
   {
     id: 9,
     title: "Sunset Raga",
-    description: "A project merging music, color, and serene visuals.",
+    description: "A digital flyer for a musical event.",
     link: "https://kironroy.dev/sunsetraga/sunsetraga",
   },
   {
     id: 10,
     title: "Trees",
-    description: "An homage to nature and environmental awareness.",
+    description: "Information about trees with dynamic search bar.",
     link: "https://treesinfo.netlify.app/",
   },
   {
     id: 11,
     title: "Vini Gora",
-    description: "A cutting-edge blend of tech and artistic vision.",
+    description: "Offical website for Dr. Vini Gora, professional vocalist.",
     link: "https://vinigora.netlify.app/",
   },
   {
     id: 12,
     title: "Farm to Mind",
-    description: "Farm to Mind.",
+    description: "Farm to Mind information.",
     link: "https://farmtomind.netlify.app/",
   },
 ];

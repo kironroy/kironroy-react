@@ -3,12 +3,14 @@ import "./Footer.css";
 
 const Footer = () => {
   const today = new Date();
-  const formattedDate = today.toLocaleDateString("en-US", {
+  const formattedDate = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
     month: "short",
     day: "numeric",
     year: "numeric",
-  });
+  })
+    .format(today)
+    .replace(",", ""); // Removes comma from the formatted string
 
   return (
     <footer className="footer">
