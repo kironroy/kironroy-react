@@ -1,7 +1,32 @@
 import React from "react";
 import "./Contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    emailjs
+      .sendForm(
+        "service_bj2vtfe", // Replace with your actual Service ID
+        "YOUR_TEMPLATE_ID", // Replace with your actual Template ID
+        e.target,
+        "YOUR_PUBLIC_KEY" // Replace with your actual Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          alert("Failed to send the message. Please try again.");
+        }
+      );
+
+    e.target.reset(); // Reset the form after submission
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -10,7 +35,7 @@ const Contact = () => {
           I'd love to hear from you! Feel free to reach out using the form
           below:
         </p>
-        <form>
+        <form onSubmit={sendEmail}>
           <label htmlFor="name">Name</label>
           <input
             type="text"
