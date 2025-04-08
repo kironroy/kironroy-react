@@ -5,8 +5,7 @@ const projects = [
   {
     id: 1,
     title: "Flow",
-    description:
-      "How to get more out of work.",
+    description: "How to get more out of work.",
     link: "https://kironroy.dev/workflow",
   },
   {
@@ -71,13 +70,12 @@ const projects = [
     description: "A cutting-edge blend of tech and artistic vision.",
     link: "https://vinigora.netlify.app/",
   },
-   {
+  {
     id: 12,
     title: "Farm to Mind",
     description: "Farm to Mind.",
     link: "https://farmtomind.netlify.app/",
   },
-  
 ];
 
 // Sort projects alphabetically by title
@@ -93,7 +91,7 @@ const Portfolio = () => {
             <div key={project.id} className="project-card">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a href={project.link} rel="noopener noreferrer">
                 View Project
               </a>
             </div>
