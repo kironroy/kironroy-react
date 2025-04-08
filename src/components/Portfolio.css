@@ -11,6 +11,10 @@
   margin-top: 20px;
 }
 
+h2 {
+  text-align: center;
+}
+
 .project-card {
   background: #fff;
   padding: 20px;
