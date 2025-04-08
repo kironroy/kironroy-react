@@ -1,5 +1,3 @@
-
-
 .header {
   background: #191919;
   color: #fff;
@@ -30,10 +28,12 @@
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
-
+  font-size: 21px;
+  color: rgb(253, 253, 12);
 }
 
-h1,h3 {
+h1,
+h3 {
   font-weight: 700;
 }
 
