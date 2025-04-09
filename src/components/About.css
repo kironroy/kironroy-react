@@ -12,13 +12,14 @@
 
 .about p {
   margin-bottom: 15px;
+  font-size: 1.2em;
   line-height: 1.6;
   color: #222;
 }
 
 .about-image {
-  max-width: 600px;
-  height: 600px;
+  max-width: 500px;
+  height: 500px;
   margin: 20px auto;
   border-radius: 5px;
   display: block;
@@ -27,7 +28,11 @@
 
 @media (max-width: 768px) {
   .about-image {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
   }
+
+  .about p {
+  font-size: 1em;
+}
 }
