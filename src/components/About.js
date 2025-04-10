@@ -20,8 +20,7 @@ const About = () => {
         </p>
         <p>
           I specialize in web development, artistic endeavors, and combining
-          technology with creativity. When I'm not working on projects, I enjoy
-          learning, experimenting, and seeking inspiration from the world around
+          technology with creativity.I enjoy learning, experimenting, and seeking inspiration from the world around
           me. Feel free to connect and share your ideas!
         </p>
       </div>
