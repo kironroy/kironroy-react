@@ -2,12 +2,7 @@ import React from 'react';
 import './Portfolio.css';
 
 const projects = [
-  {
-    id: 1,
-    title: 'Flow',
-    description: 'How to get more out of work.',
-    link: 'https://kironroy.dev/workflow',
-  },
+
   {
     id: 2,
     title: 'Artwork',
@@ -38,12 +33,7 @@ const projects = [
     description: 'Information on Mutual Funds.',
     link: 'https://kironroy.dev/mutualfunds',
   },
-  {
-    id: 7,
-    title: 'Nash Equilibrium',
-    description: 'Nash Equilibrium and wildfires.',
-    link: 'https://kironroy.dev/nash',
-  },
+
   {
     id: 8,
     title: 'Stoic Notes',
@@ -68,12 +58,7 @@ const projects = [
     description: 'Offical website for Dr. Vini Gora, professional vocalist.',
     link: 'https://vinigora.netlify.app/',
   },
-  {
-    id: 12,
-    title: 'Farm to Mind',
-    description: 'Farm to Mind information.',
-    link: 'https://farmtomind.netlify.app/',
-  },
+
 ];
 
 // Sort projects alphabetically by title
