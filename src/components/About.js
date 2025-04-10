@@ -1,5 +1,5 @@
-import React from "react";
-import "./About.css";
+import React from 'react';
+import './About.css';
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <h2>About Me</h2>
         <img
-          src={require("../kironroy.webp")}
+          src={require('../kironroy.webp')}
           width="340"
           height="440"
           alt="Kiron Roy"

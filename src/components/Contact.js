@@ -1,26 +1,26 @@
-import React from "react";
-import "./Contact.css";
-import emailjs from "emailjs-com";
+import React from 'react';
+import './Contact.css';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault(); // Prevent the default form submission behavior
 
     emailjs
       .sendForm(
-        "service_bj2vtfe", // Replace with your actual Service ID
-        "template_0q1qupp", // Replace with your actual Template ID
+        'service_bj2vtfe', // Replace with your actual Service ID
+        'template_0q1qupp', // Replace with your actual Template ID
         e.target,
-        "cYHvBJ9tIO8cclgdD" // Replace with your actual Public Key
+        'cYHvBJ9tIO8cclgdD' // Replace with your actual Public Key
       )
       .then(
-        (result) => {
-          console.log("Email sent successfully:", result.text);
-          alert("Message sent successfully!");
+        result => {
+          console.log('Email sent successfully:', result.text);
+          alert('Message sent successfully!');
         },
-        (error) => {
-          console.error("Error sending email:", error.text);
-          alert("Failed to send the message. Please try again.");
+        error => {
+          console.error('Error sending email:', error.text);
+          alert('Failed to send the message. Please try again.');
         }
       );
 

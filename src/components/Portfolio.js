@@ -1,79 +1,78 @@
-import React from "react";
-import "./Portfolio.css";
+import React from 'react';
+import './Portfolio.css';
 
 const projects = [
   {
     id: 1,
-    title: "Flow",
-    description: "How to get more out of work.",
-    link: "https://kironroy.dev/workflow",
+    title: 'Flow',
+    description: 'How to get more out of work.',
+    link: 'https://kironroy.dev/workflow',
   },
   {
     id: 2,
-    title: "Artwork",
-    description: "A collection of my artwork.",
-    link: "https://kironroy.dev/art",
+    title: 'Artwork',
+    description: 'A collection of my artwork.',
+    link: 'https://kironroy.dev/art',
   },
   {
     id: 3,
-    title: "Console.Log()",
-    description: "Fun with console.log()in the browser.",
-    link: "https://js-console-log.netlify.app/",
+    title: 'Console.Log()',
+    description: 'Fun with console.log()in the browser.',
+    link: 'https://js-console-log.netlify.app/',
   },
   {
     id: 4,
-    title: "Dreamscape",
-    description: "Digital Art. Website created with React.",
-    link: "https://dreamscapegallery.netlify.app/",
+    title: 'Dreamscape',
+    description: 'Digital Art. Website created with React.',
+    link: 'https://dreamscapegallery.netlify.app/',
   },
   {
     id: 5,
-    title: "Mathematics",
-    description: "Mathematics with JavaScript.",
-    link: "https://kironroy.dev/mathjs",
+    title: 'Mathematics',
+    description: 'Mathematics with JavaScript.',
+    link: 'https://kironroy.dev/mathjs',
   },
   {
     id: 6,
-    title: "Mutual Funds",
-    description: "Information on Mutual Funds.",
-    link: "https://kironroy.dev/mutualfunds",
+    title: 'Mutual Funds',
+    description: 'Information on Mutual Funds.',
+    link: 'https://kironroy.dev/mutualfunds',
   },
   {
     id: 7,
-    title: "Nash Equilibrium",
-    description: "Nash Equilibrium and wildfires.",
-    link: "https://kironroy.dev/nash",
+    title: 'Nash Equilibrium',
+    description: 'Nash Equilibrium and wildfires.',
+    link: 'https://kironroy.dev/nash',
   },
   {
     id: 8,
-    title: "Stoic Notes",
-    description:
-      "Breakfast with Senecia book summary.",
-    link: "https://kironroy.dev/stoic",
+    title: 'Stoic Notes',
+    description: 'Breakfast with Senecia book summary.',
+    link: 'https://kironroy.dev/stoic',
   },
   {
     id: 9,
-    title: "Sunset Raga",
-    description: "A digital flyer for a musical event.",
-    link: "https://kironroy.dev/sunsetraga/sunsetraga",
+    title: 'Sunset Raga',
+    description: 'A digital flyer for a musical event.',
+    link: 'https://kironroy.dev/sunsetraga/sunsetraga',
   },
   {
     id: 10,
-    title: "Trees",
-    description: "Information about trees with dynamic search bar.",
-    link: "https://treesinfo.netlify.app/",
+    title: 'Trees',
+    description: 'Information about trees with dynamic search bar.',
+    link: 'https://treesinfo.netlify.app/',
   },
   {
     id: 11,
-    title: "Vini Gora",
-    description: "Offical website for Dr. Vini Gora, professional vocalist.",
-    link: "https://vinigora.netlify.app/",
+    title: 'Vini Gora',
+    description: 'Offical website for Dr. Vini Gora, professional vocalist.',
+    link: 'https://vinigora.netlify.app/',
   },
   {
     id: 12,
-    title: "Farm to Mind",
-    description: "Farm to Mind information.",
-    link: "https://farmtomind.netlify.app/",
+    title: 'Farm to Mind',
+    description: 'Farm to Mind information.',
+    link: 'https://farmtomind.netlify.app/',
   },
 ];
 
@@ -86,7 +85,7 @@ const Portfolio = () => {
       <div className="container">
         <h2>Projects</h2>
         <div className="projects-grid">
-          {sortedProjects.map((project) => (
+          {sortedProjects.map(project => (
             <div key={project.id} className="project-card">
               <h3>{project.title}</h3>
               <p>{project.description}</p>

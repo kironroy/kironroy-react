@@ -1,16 +1,16 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   const today = new Date();
-  const formattedDate = new Intl.DateTimeFormat("en-US", {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-    year: "numeric",
+  const formattedDate = new Intl.DateTimeFormat('en-US', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
   })
     .format(today)
-    .replace(",", ""); // Removes comma from the formatted string
+    .replace(',', ''); // Removes comma from the formatted string
 
   return (
     <footer className="footer">
