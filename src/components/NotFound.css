@@ -1,0 +1,20 @@
+.not-found-H1 {
+  color: #222;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.not-found-link {
+    /* text-decoration: none; */
+    color: #0b0bfd;
+   font-size: 1.5em;
+
+}
+
+.not-found-p {
+   font-size: 1em;
+   color: #454545;
+}
+
+
+

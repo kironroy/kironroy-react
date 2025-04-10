@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           {/* Define NewPage route */}
           <Route path="Dreamscape" element={<Dreamscape />} />
+          <Route path="*" element={<NotFound />} />
 
           {/* Define routes for other pages with shared layout */}
           <Route
