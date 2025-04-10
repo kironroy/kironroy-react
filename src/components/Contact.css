@@ -1,3 +1,19 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/src/manrope-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/src/manrope-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 .contact .container {
   max-width: 600px;
   margin: 0 auto;
@@ -30,6 +46,8 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+    font-family: "Manrope", sans-serif;
+  font-weight: 500;
 }
 
 .contact button {
@@ -41,6 +59,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
 }
 
 .contact button:hover {

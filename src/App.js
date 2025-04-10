@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -17,7 +16,6 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <BackToTop />
     </div>
   );
 }
