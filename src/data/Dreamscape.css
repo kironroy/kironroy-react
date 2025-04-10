@@ -1,0 +1,110 @@
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  p {
+    font-size: 1em;
+    color: #333;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: none;
+  }
+
+  h1,
+  h3 {
+    color: #333;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    color: #333;
+    /* font-family: 'Manrope', sans-serif; */
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #root {
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  button {
+    width: 20%;
+    padding: 10px;
+    margin: 10px auto; /* Center the button horizontally */
+    display: block; /* Ensure the button is treated as a block element */
+    background-color: #dfdfdf;
+    border: #dfdfdf;
+    color: none !important;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+  }
+
+  button:nth-child(n) {
+    padding: 20; /* Spacing Tweaked Axes */
+  }
+  .row {
+    align-items: center;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.75em;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    button {
+      width: 40%;
+      font-size: 0.75em;
+    }
+  }
+
