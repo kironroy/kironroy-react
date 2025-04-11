@@ -33,8 +33,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Avenir', sans-serif;
-
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .contact button {
@@ -47,8 +46,7 @@
   cursor: pointer;
   transition: background 0.3s ease;
   font-family: 'Avenir', sans-serif;
-
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .contact button:hover {
