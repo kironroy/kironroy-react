@@ -1,5 +1,5 @@
 .header {
-  background: #191919;
+  background: #292519;
   color: #fff;
   padding: 20px 0;
 }
@@ -29,12 +29,10 @@
   font-size: 1rem;
   font-weight: 700;
   font-size: 24px;
-  color: rgb(253, 253, 12);
 }
 
-h1,
-h3 {
-  font-weight: 700;
+h1{
+  color: #ff9650;
 }
 
 @media screen and (max-width: 768px) {
