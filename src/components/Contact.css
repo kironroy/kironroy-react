@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/avenir');
 
+
+
 .contact .container {
   max-width: 600px;
   margin: 0 auto;
@@ -33,7 +35,6 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Avenir', sans-serif;
-  font-weight: 400;
 }
 
 .contact button {
@@ -46,7 +47,6 @@
   cursor: pointer;
   transition: background 0.3s ease;
   font-family: 'Avenir', sans-serif;
-  font-weight: 600;
 }
 
 .contact button:hover {
