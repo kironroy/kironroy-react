@@ -38,7 +38,7 @@
   .about p {
     font-size: 1em; /* Smaller font for mobile */
     line-height: 1.4;
-    word-spacing: -2px; /* Tighter word spacing for mobile */
+    word-spacing: -5px; /* Tighter word spacing for mobile */
   }
   .about-image {
     max-width: 80%;
