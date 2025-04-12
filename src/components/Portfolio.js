@@ -36,9 +36,9 @@ const projects = [
 
   {
     id: 8,
-    title: 'Stoic Notes',
-    description: 'Breakfast with Senecia book summary.',
-    link: 'https://kironroy.dev/stoic',
+    title: 'Profile API',
+    description: 'An API that connects two seprate JSON files.',
+    link: 'https://kironroy.dev/users',
   },
   {
     id: 9,
