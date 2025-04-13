@@ -37,7 +37,7 @@ const projects = [
   {
     id: 8,
     title: 'Profile API',
-    description: 'An API that connects two JSON files from two separate sources.',
+    description: 'An API that connects two profiles from two separate JSON files.',
     link: 'https://kironroy.dev/users',
   },
   {
