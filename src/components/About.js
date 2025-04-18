@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <img
           src={require('../kironroy.webp')}
           width="340"
