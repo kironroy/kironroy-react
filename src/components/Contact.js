@@ -32,8 +32,7 @@ const Contact = () => {
       <div className="container">
         <h2>Contact Me</h2>
         <p>
-          I'd love to hear from you! Feel free to reach out using the form
-          below:
+          Feel free to reach out using the form below:
         </p>
         <form onSubmit={sendEmail}>
           <label htmlFor="name">Name</label>
