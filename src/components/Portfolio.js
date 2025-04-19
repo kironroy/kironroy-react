@@ -2,7 +2,6 @@ import React from 'react';
 import './Portfolio.css';
 
 const projects = [
-
   {
     id: 2,
     title: 'Artwork',
@@ -36,8 +35,8 @@ const projects = [
 
   {
     id: 8,
-    title: 'Profile API',
-    description: 'An API that connects two profiles from two separate JSON files.',
+    title: 'Writers API',
+    description: 'An API of influential witters.',
     link: 'https://kironroy.dev/users',
   },
   {
@@ -58,7 +57,6 @@ const projects = [
     description: 'Offical website for Dr. Vini Gora, professional vocalist.',
     link: 'https://vinigora.netlify.app/',
   },
-
 ];
 
 // Sort projects alphabetically by title
