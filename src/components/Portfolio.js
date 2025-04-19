@@ -37,7 +37,7 @@ const projects = [
     id: 8,
     title: 'Writers API',
     description: 'An API of influential witters.',
-    link: 'https://kironroy.dev/users',
+    link: 'https://kironroy.dev/content',
   },
   {
     id: 9,
