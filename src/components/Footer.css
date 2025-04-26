@@ -14,3 +14,12 @@
 .footer p {
   font-size: 1rem;
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+  .footer {
+    background: #333;
+    color: #fff;
+  }
+}
+

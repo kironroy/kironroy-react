@@ -52,3 +52,18 @@
     height: auto; /* Adjusts height dynamically */
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .about h2 {
+    color: #d4d4d4;
+    font-weight: 700;
+  }
+
+  .about-text {
+    background: #232323;
+  }
+
+  .about p {
+    color: #d4d4d4;
+  }
+}

@@ -12,3 +12,11 @@ main {
   flex-direction: column;
   justify-content: flex-start; /* or center if you prefer */
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .App {
+    background: #1e1e1e;
+    color: #d4d4d4;
+  }
+
+}

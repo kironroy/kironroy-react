@@ -52,3 +52,17 @@
 .contact button:hover {
   background: #ff9650;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .contact button {
+    background: #cf6679;
+  }
+
+  .contact .container {
+    background: #232323;
+  }
+
+  .contact h2 {
+    color: #fff;
+  }
+}

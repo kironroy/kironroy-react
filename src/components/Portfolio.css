@@ -38,3 +38,18 @@ h2 {
   text-decoration: none;
   font-weight: 600;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .project-card {
+    color: #fff;
+    background: #232323;
+  }
+
+  p {
+    color: #e0e0e0;
+  }
+
+  .project-card a {
+    color: #cf6679;
+  }
+}
