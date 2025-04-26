@@ -41,9 +41,9 @@ const projects = [
   },
   {
     id: 9,
-    title: 'Sunset Raga',
-    description: 'A digital flyer for a musical event.',
-    link: 'https://kironroy.dev/sunsetraga/sunsetraga',
+    title: 'Blog',
+    description: 'A blog created with Eleventy.',
+    link: 'https://kironroyblog.netlify.app/',
   },
   {
     id: 10,
