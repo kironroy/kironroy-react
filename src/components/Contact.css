@@ -65,4 +65,14 @@
   .contact h2 {
     color: #fff;
   }
+
+  .contact input,
+  .contact textarea {
+    border: 1px solid #03dac6;
+    background-color: #232323;
+  }
+
+  .contact button:hover {
+    background: #bb86fc;
+  }
 }
