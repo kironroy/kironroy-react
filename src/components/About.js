@@ -17,7 +17,7 @@ const About = () => {
           <p>
             Hello, I'm Kiron Roy. Welcome to my portfolio. I'm a passionate
             developer and creator, always excited about crafting innovative
-            projects and exploring new ideas. *Added this note with a new laptop!
+            projects and exploring new ideas. 
           </p>
           <p>
             I specialize in web development, artistic endeavors, and combining
