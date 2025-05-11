@@ -28,9 +28,9 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Mutual Funds',
-    description: 'Information on Mutual Funds.',
-    link: 'https://kironroy.dev/mutualfunds',
+    title: 'Books Database',
+    description: 'A CRUD application that stores book information in a firebase database.',
+    link: 'https://books-database.netlify.app/',
   },
 
   {
