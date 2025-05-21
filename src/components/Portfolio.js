@@ -29,26 +29,26 @@ const projects = [
   {
     id: 6,
     title: 'Books Database',
-    description: 'A CRUD application that stores book information in a firebase database.',
+    description: 'CRUD application Book information in a firebase database.',
     link: 'https://books-database.netlify.app/',
   },
 
   {
     id: 8,
     title: 'Writers API',
-    description: 'An API of influential writers.',
+    description: 'API of influential writers.',
     link: 'https://kironroy.dev/content',
   },
   {
     id: 9,
     title: 'Blog',
-    description: 'A blog created with Eleventy.',
+    description: 'My blog created with Eleventy.',
     link: 'https://kironroyblog.netlify.app/',
   },
   {
     id: 10,
     title: 'Trees',
-    description: 'Information about trees with dynamic search bar.',
+    description: 'Information about trees with dynamic search.',
     link: 'https://treesinfo.netlify.app/',
   },
   {
