@@ -29,7 +29,7 @@ const projects = [
   {
     id: 6,
     title: 'Books Database',
-    description: 'CRUD application. Book data stored in a firebase.',
+    description: 'CRUD application. Book information stored in firebase.',
     link: 'https://books-database.netlify.app/',
   },
 
