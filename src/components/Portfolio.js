@@ -17,7 +17,7 @@ const projects = [
   {
     id: 4,
     title: 'Hadden',
-    description: 'Hadden Industries official company page.',
+    description: 'Hadden Industries official website.',
     link: 'https://hadden.netlify.app/',
   },
   {
