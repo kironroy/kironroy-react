@@ -16,9 +16,9 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Dreamscape',
-    description: 'Digital Art. Website created with React.',
-    link: 'https://dreamscapegallery.netlify.app/',
+    title: 'Hadden',
+    description: 'Hadden Industries official company page.',
+    link: 'https://hadden.netlify.app/',
   },
   {
     id: 5,
