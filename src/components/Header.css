@@ -1,5 +1,5 @@
 .header {
-  background: #292519;
+  background: #00063d;
   color: #fff;
   padding: 20px 0;
 }
@@ -7,7 +7,7 @@
 .header .container {
   width: 90%;
   margin: 0 auto;
-  display: flex;
+  display: flex;;
   justify-content: space-between;
   align-items: center;
 }
@@ -32,7 +32,7 @@
 }
 
 h1 {
-  color: #ff9650;
+  color: #fff27a;
 }
 
 @media screen and (max-width: 768px) {

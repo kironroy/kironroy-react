@@ -1,6 +1,6 @@
 .footer {
-  background: #292519;
-  color: #fff;
+  background: #00063d;
+  color:#fff;
   padding: 20px 0;
   text-align: center;
   margin-top: 20px; /* Adjust as needed */
@@ -19,7 +19,7 @@
 @media screen and (prefers-color-scheme: dark) {
   .footer {
     background: #333;
-    color: #fff;
+    color: #fffdee;
   }
 }
 
