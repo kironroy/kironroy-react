@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <h2>About</h2>
         <img
-          src={require('../kironroy.webp')}
+          src={require('../relax_k.webp')}
           width="340"
           height="440"
           alt="Kiron Roy"
