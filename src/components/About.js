@@ -5,13 +5,26 @@ const About = () => {
   const [imageSrc, setImageSrc] = useState(require('../relax_k.webp'));
 
   useEffect(() => {
-    // Check if night mode is active (based on the user's theme preference)
-    const prefersDarkMode = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
-    if (prefersDarkMode) {
-      setImageSrc(require('../night_k.webp')); // Change to night-time image
-    }
+    const updateImage = event => {
+      if (event.matches) {
+        setImageSrc(require('../night_k.webp'));
+      } else {
+        setImageSrc(require('../relax_k.webp'));
+      }
+    };
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // Set initial state
+    updateImage(mediaQuery);
+
+    // Listen for changes
+    mediaQuery.addEventListener('change', updateImage);
+
+    // Cleanup event listener when component unmounts
+    return () => {
+      mediaQuery.removeEventListener('change', updateImage);
+    };
   }, []);
 
   return (
