@@ -40,10 +40,12 @@ const About = () => {
         />
         <div className="about-text">
           <p>
-            I'm <a className='github-link' href='https://github.com/kironroy'>Kiron Roy,</a>  a developer and creator. I build, explore, and push
-            ideas forward. I specialize in web development and creative
-            projects, mixing tech with artistry. I love to learn, experiment,
-            and find inspiration everywhere.
+            I'm{' '}
+            <a className="github-link" href="https://github.com/kironroy">
+              Kiron Roy,
+            </a>{' '}
+            a developer and creator. I specialize in web development and
+            creative projects
           </p>
           <p>Let’s connect—share your ideas!</p>
         </div>

@@ -54,7 +54,7 @@
   .about p {
     font-size: 1em; /* Smaller font for mobile */
     line-height: 1.5;
-    word-spacing: -2.9px; /* Tighter word spacing for mobile */
+    word-spacing: -2.5px; /* Tighter word spacing for mobile */
   }
   .about-image {
     max-width: 80%;
