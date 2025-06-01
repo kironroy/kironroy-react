@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.github-link {
+  text-decoration: none;
+}
+
 .about-text {
   background-color: #fff;
   padding: 40px 20px;
