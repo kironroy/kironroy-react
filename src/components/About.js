@@ -40,7 +40,7 @@ const About = () => {
         />
         <div className="about-text">
           <p>
-            I'm Kiron Roy, a developer and creator. I build, explore, and push
+            I'm <a href='https://github.com/kironroy'>Kiron Roy,</a>  a developer and creator. I build, explore, and push
             ideas forward. I specialize in web development and creative
             projects, mixing tech with artistry. I love to learn, experiment,
             and find inspiration everywhere.
