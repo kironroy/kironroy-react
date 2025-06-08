@@ -11,7 +11,7 @@ const projects = [
   {
     id: 3,
     title: 'Console',
-    description: "Use JavaScript's console.log() method to find website information.",
+    description: "JavaScript's console.log() method.",
     link: 'https://js-console-log.netlify.app/',
   },
   {
