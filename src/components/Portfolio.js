@@ -11,7 +11,7 @@ const projects = [
   {
     id: 3,
     title: 'Console',
-    description: 'Use console.log() method in any browser to find key information.',
+    description: "Use JavaScript's console.log() method in any browser to find key information.",
     link: 'https://js-console-log.netlify.app/',
   },
   {
