@@ -10,7 +10,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Console.Log()',
+    title: 'Console',
     description: 'Use console.log() in any browser to find key information.',
     link: 'https://js-console-log.netlify.app/',
   },
