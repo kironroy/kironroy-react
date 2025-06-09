@@ -44,9 +44,9 @@
 .contact button {
   background: #000a64;
   color: white;
-  padding: 10px 15px;
+  padding: 13px 15px;
   font-size: 1.2em;
-  border: 4px solid #000a64;
+  border: 1px solid #000a64;
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
@@ -56,13 +56,13 @@
 
 .contact button:hover {
   background: #ff9650;
-  border: 4px solid #ff9650;
+  border: 1px solid #ff9650;
 }
 
 @media screen and (prefers-color-scheme: dark) {
   .contact button {
     background: #cf6679;
-    border: 4px solid #cf6679;
+    border: 1px solid #cf6679;
   }
 
   .contact .container {
