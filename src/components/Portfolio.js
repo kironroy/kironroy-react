@@ -23,8 +23,8 @@ const projects = [
   {
     id: 5,
     title: 'Mathematics',
-    description: 'Mathematics with JavaScript.',
-    link: 'https://kironroy.dev/mathjs',
+    description: 'Mathematics with TypeScript.',
+    link: 'https://mathematics-six.vercel.app/',
   },
   {
     id: 6,
