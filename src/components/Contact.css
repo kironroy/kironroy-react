@@ -1,72 +1,121 @@
-
+/* 🌊 Global Font */
 * {
   font-family: "Avenir LT Pro", sans-serif;
 }
 
+/* 📬 Contact Container with Liquid Glass Style */
 .contact .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    inset 0 0 1px rgba(255, 255, 255, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
 }
 
+/* ✨ Liquid shimmer layer */
+.contact .container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+  animation: shimmerSwirl 8s infinite linear;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes shimmerSwirl {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(5%, 5%) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+/* 🏷️ Header */
 .contact h2 {
   margin-bottom: 20px;
   color: #333;
   font-size: 1.5em;
+  position: relative;
+  z-index: 1;
 }
 
+/* 📄 Form Layout */
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
+  z-index: 1;
 }
 
+/* 🧾 Labels */
 .contact label {
   text-align: left;
   font-weight: bold;
   font-size: 1.3em;
+  color: #2a2a2a;
 }
 
+/* ✍️ Inputs and Textarea */
 .contact input,
 .contact textarea {
   width: 100%;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: #222;
 }
 
+/* 🎯 Submit Button */
 .contact button {
-  background: #130057;
+  background: rgba(19, 0, 87, 0.8);
   color: white;
   padding: 13px 15px;
   font-size: 1.2em;
   border: 1px solid #130057;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
   transition: background 0.3s ease;
   font-weight: 600;
+  backdrop-filter: blur(4px);
 }
 
+/* 🪄 Hover Animation */
 .contact button:hover {
   background: #ff9650;
   border: 1px solid #ff9650;
 }
 
+/* 🌙 Dark Mode */
 @media screen and (prefers-color-scheme: dark) {
-  .contact button {
-    background: #cf6679;
-    border: 1px solid #cf6679;
-  }
-
   .contact .container {
-    background: #232323;
+    background: rgba(40, 40, 40, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      inset 0 0 1px rgba(255, 255, 255, 0.05),
+      0 6px 20px rgba(0,0,0,0.4);
   }
 
   .contact h2 {
@@ -76,9 +125,14 @@
   .contact input,
   .contact textarea {
     border: 1px solid #03dac6;
-    background-color: #232323;
+    background-color: rgba(35, 35, 35, 0.3);
     color: #bb86fc;
+  }
 
+  .contact button {
+    background: #cf6679;
+    border: 1px solid #cf6679;
+    color: white;
   }
 
   .contact button:hover {
