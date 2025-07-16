@@ -30,10 +30,8 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Contact Me</h2>
-        <p>
-          Feel free to reach out.
-        </p>
+        <h2 className='contact'>Contact</h2>
+  
         <form onSubmit={sendEmail}>
           <label htmlFor="name">Name</label>
           <input
