@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.footer-date {
+  color: #ffffff;
+}
+
 .header nav ul {
   list-style: none;
   display: flex;

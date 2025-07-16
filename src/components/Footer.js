@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>{formattedDate}</p>
+        <p className='footer-date'>{formattedDate}</p>
       </div>
     </footer>
   );
