@@ -3,9 +3,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #e2ecf2, #fefeff);
+  background-image: 
+    url('../pixel.webp'),
+    linear-gradient(135deg, #e2ecf2, #fefeff);
+  background-blend-mode:color-burn;
+  background-size: cover;
   border-radius: 20px;
 }
+
 
 /* 🧱 Projects Grid */
 .projects-grid {
