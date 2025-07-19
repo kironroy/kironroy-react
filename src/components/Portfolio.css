@@ -25,7 +25,7 @@ h2 {
 /* 💧 Liquid Glass Project Card */
 .project-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 15px;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
@@ -36,9 +36,10 @@ h2 {
   overflow: hidden;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 0;
 }
 
-/* ✨ Shimmer Animation */
+/* ✨ Shimmer Animation (theme-aware) */
 .project-card::before {
   content: '';
   position: absolute;
@@ -46,10 +47,31 @@ h2 {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
   animation: liquidPulse 6s infinite linear;
   pointer-events: none;
   z-index: 0;
+}
+
+/* 💡 Light Mode Shimmer */
+@media screen and (prefers-color-scheme: light) {
+  .project-card::before {
+    background: radial-gradient(
+      circle at center,
+      rgba(170, 170, 255, 0.25),
+      transparent 70%
+    );
+  }
+}
+
+/* 🌙 Dark Mode Shimmer */
+@media screen and (prefers-color-scheme: dark) {
+  .project-card::before {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.2),
+      transparent 70%
+    );
+  }
 }
 
 @keyframes liquidPulse {
@@ -96,7 +118,7 @@ p {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2em;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.7);
   padding: 6px 12px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
@@ -128,7 +150,7 @@ p {
   }
 }
 
-/* 🌙 Dark Mode */
+/* 🌙 Dark Mode Container and Card Tweaks */
 @media screen and (prefers-color-scheme: dark) {
   .portfolio .container {
     background: linear-gradient(135deg, #1c1e26, #2a2b31);
