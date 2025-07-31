@@ -25,31 +25,32 @@ h2 {
 /* 💧 Liquid Glass Project Card */
 .project-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow:
-    inset 0 0 0.8px rgba(255, 255, 255, 0.5),
-    0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+    inset 0 4px 20px rgba(255, 255, 255, 0.3);
   overflow: hidden;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 0;
 }
 
 /* ✨ Shimmer Animation (theme-aware) */
-.project-card::before {
+.project-card::after {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  animation: liquidPulse 6s infinite linear;
-  pointer-events: none;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
+    inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
+  opacity: 0.6;
+  z-index: -1;
+  filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
 }
 
 /* 💡 Light Mode Shimmer */
@@ -89,8 +90,7 @@ h2 {
 /* 🪟 Card Hover */
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow:
-    inset 0 0 0.8px rgba(255, 255, 255, 0.8),
+  box-shadow: inset 0 0 0.8px rgba(255, 255, 255, 0.8),
     0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -137,7 +137,8 @@ p {
     margin-top: 10px;
   }
 
-  p, .project-card a {
+  p,
+  .project-card a {
     font-size: 1em;
   }
 
