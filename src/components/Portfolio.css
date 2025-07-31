@@ -75,7 +75,7 @@ h2 {
   }
 }
 
-@keyframes liquidPulse {
+/* @keyframes liquidPulse {
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -85,7 +85,7 @@ h2 {
   100% {
     transform: translate(0, 0) rotate(360deg);
   }
-}
+} */
 
 /* 🪟 Card Hover */
 .project-card:hover {

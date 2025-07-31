@@ -38,7 +38,7 @@
   z-index: 0;
 }
 
-@keyframes shimmerSwirl {
+/* @keyframes shimmerSwirl {
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -48,7 +48,7 @@
   100% {
     transform: translate(0, 0) rotate(360deg);
   }
-}
+} */
 
 /* 🏷️ Header */
 .contact h2 {

@@ -35,7 +35,7 @@
   z-index: 0;
 }
 
-@keyframes liquidSwirl {
+/* @keyframes liquidSwirl {
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -45,7 +45,7 @@
   100% {
     transform: translate(0, 0) rotate(360deg);
   }
-}
+} */
 
 /* 🧩 Content Layers */
 .about .container > * {
