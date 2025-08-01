@@ -26,7 +26,7 @@ const About = () => (
             Kiron Roy,
           </a>{' '}
           a developer and creator. I specialize in web development and creative
-          projects
+          projects.
         </p>
         <p>Let’s connect—share your ideas!</p>
       </div>
