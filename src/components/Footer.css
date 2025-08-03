@@ -3,25 +3,39 @@
   background: rgba(14, 5, 45, 0.6); /* translucent dark base */
   color: #fff;
   padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Safari support */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Container */
 .footer .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
+/* Footer Date - Centering Fix */
 .footer-date {
+  flex: 1;
   color: #ffffff;
   text-align: center;
 }
 
+/* Footer Paragraph */
+.footer p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Footer Nav Styles */
 .footer nav ul {
   list-style: none;
   display: flex;
@@ -40,31 +54,9 @@
   font-weight: 600;
 }
 
+/* Headings */
 h1 {
   color: #fff27a;
-}
-
-/* Footer Styles */
-.footer {
-  background: rgba(14, 5, 45, 0.6); /* translucent dark base */
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 20px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
-}
-
-.footer .container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.footer p {
-  font-size: 1rem;
-  text-align: center;
 }
 
 /* Responsive Styles */
@@ -72,6 +64,7 @@ h1 {
   .footer .container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .footer nav ul {
@@ -85,7 +78,6 @@ h1 {
   }
 }
 
-/* Dark Mode Tweaks */
 @media screen and (prefers-color-scheme: dark) {
   .footer {
     background: rgba(51, 51, 51, 0.7);
@@ -94,14 +86,5 @@ h1 {
     color: #fff;
   }
 
-  .footer {
-    background: rgba(51, 51, 51, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: #fffdee;
-  }
 
-  h1 {
-    color: #bb86fc;
-  }
 }
