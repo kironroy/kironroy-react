@@ -54,10 +54,6 @@
   font-weight: 600;
 }
 
-/* Headings */
-h1 {
-  color: #fff27a;
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
