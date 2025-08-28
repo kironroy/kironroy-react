@@ -82,11 +82,11 @@
 
 /* 🎯 Submit Button */
 .contact button {
-  background: rgba(19, 0, 87, 0.8);
+  background: #3a2d6b;
   color: white;
   padding: 13px 15px;
   font-size: 1.2em;
-  border: 1px solid #130057;
+  border: 1px solid #3a2d6b;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
