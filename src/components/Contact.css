@@ -116,7 +116,7 @@
   .contact textarea {
     border: 1px solid #03dac6;
     background-color: rgba(35, 35, 35, 0.3);
-    color: #bb86fc;
+    color: #fff;
   }
 
   .contact button {
@@ -131,6 +131,6 @@
   }
 
   input:focus {
-    color: #bb86fc;
+    color: #81caff;
   }
 }
