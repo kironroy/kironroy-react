@@ -1,5 +1,5 @@
 .header {
-  background: #e6eef4;
+  background: #ecf8ee;
   color: #fff;
   padding: 20px 0;
   backdrop-filter: blur(10px);
@@ -28,11 +28,11 @@
 }
 
 .header nav a {
-  color: #005cff;
+  color: #222;
   text-decoration: none;
   font-size: 28px;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.7);
+  background: #bbedc2;
   padding: 6px 12px;
   border-radius: 8px;
   backdrop-filter: blur(4px);

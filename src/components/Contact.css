@@ -9,7 +9,7 @@
   margin: 20px auto 0 auto;
   padding: 40px 20px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.534);
+  background: #ecf8ee;
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
   border-radius: 15px;
@@ -73,24 +73,25 @@
   border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
-  background: rgba(255, 255, 255, 0.15);
+  background: #fff;
   backdrop-filter: blur(8px);
   color: #222;
 }
 
 /* 🎯 Submit Button */
 .contact button {
-  background: #3a2d6b;
-  color: white;
+  background: #bbedc2;
+  color: #222;
   padding: 13px 15px;
   font-size: 1.2em;
-  border: 1px solid #3a2d6b;
+  border: 1px solid #bbedc2;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
   transition: background 0.3s ease;
   font-weight: 600;
   backdrop-filter: blur(4px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* 🪄 Hover Animation */

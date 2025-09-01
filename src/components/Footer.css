@@ -1,13 +1,13 @@
 /* Header Styles */
 .footer {
-  background: #605b71;
+  background: #ecf8ee;
   color: #fff;
   padding: 20px 0;
   text-align: center;
   margin-top: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Safari support */
-  border-top: 1px solid #605b71;
+  border-top: 1px solid #ecf8ee;
   box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -25,7 +25,7 @@
 /* Footer Date - Centering Fix */
 .footer-date {
   flex: 1;
-  color: #ffffff;
+  color: #222;
   text-align: center;
 }
 
@@ -80,5 +80,9 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: #fff;
+  }
+
+  .footer-date {
+    color: #eee;
   }
 }
