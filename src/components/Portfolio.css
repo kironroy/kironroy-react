@@ -103,6 +103,8 @@ h2 {
 .project-card h3 {
   font-size: 1.5em;
   color: #222;
+  border-bottom: 1px solid #b8b8b8; /* Thin line */
+  padding-bottom: 4px; /* Space between text and line */
 }
 
 p {
@@ -175,4 +177,9 @@ p {
   h2 {
     color: #e4e4e4;
   }
+
+  .project-card h3 {
+  border-bottom: 1px solid #5e5e5e; /* Thin line */
+}
+
 }
