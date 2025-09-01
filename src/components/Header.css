@@ -64,6 +64,10 @@ h1 {
   }
 
   h1 {
-    color: #bb86fc;
+    color: #d4d4d4;
+  }
+
+  .header nav a {
+    color: #81caff;
   }
 }
