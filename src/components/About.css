@@ -54,7 +54,7 @@
 /* 🔗 GitHub Link */
 .github-link {
   text-decoration: none;
-  color: blue;
+  color: #DAA520;
   font-weight: 700;
   backdrop-filter: blur(3px);
 }
