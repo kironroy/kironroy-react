@@ -82,7 +82,7 @@ form textarea::placeholder {
   color: #fff;
   padding: 13px 15px;
   font-size: 1.2em;
-  border: 1px solid #0f0f0f;
+  border: 2px solid #0f0f0f;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
@@ -95,8 +95,18 @@ form textarea::placeholder {
 /* 🪄 Hover Animation */
 .contact button:hover {
   background: #ff9650;
-  border: 1px solid #ff9650;
+  border: 2px solid #ff9650;
+  color:#222;
 }
+
+/* 💻 Laptop-specific adjustments for Send button */
+@media screen and (min-width: 1024px) {
+  .contact button {
+    padding: 16px 18px; /* slightly taller */
+    font-size: 1.3em;   /* slightly larger text */
+  }
+}
+
 
 /* 🌙 Dark Mode */
 @media screen and (prefers-color-scheme: dark) {
@@ -129,13 +139,13 @@ form textarea::placeholder {
 
   .contact button {
     background: #cf6679;
-    border: 1px solid #cf6679;
+    border: 2px solid #cf6679;
     color: white;
   }
 
   .contact button:hover {
     background: #bb86fc;
-    border: 4px solid #bb86fc;
+    border: 2px solid #bb86fc;
   }
 
   input:focus {

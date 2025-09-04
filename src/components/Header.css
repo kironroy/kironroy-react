@@ -38,6 +38,11 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.header nav a:hover {
+  background: #222;
+  color: #bbedc2;
+}
+
 h1 {
   color: #2a2a2a;
 }
@@ -78,5 +83,10 @@ h1 {
   .header nav a {
     color: #81caff;
     background: rgba(100, 100, 100, 0.3);
+  }
+
+  .header nav a:hover {
+    background: #81caff;
+    color: #222;
   }
 }
