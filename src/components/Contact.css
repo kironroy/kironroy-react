@@ -10,6 +10,8 @@
   padding: 40px 20px;
   text-align: center;
   background: #ecf8ee;
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3),
@@ -32,7 +34,12 @@ form textarea::placeholder {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: #222;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+
 }
 
 /* 🏷️ Header */
@@ -115,8 +122,9 @@ form textarea::placeholder {
   }
 
   .contact label {
-    color: #ccc;
-  }
+  color: #ccc;
+}
+
 
   .contact input,
   .contact textarea {
@@ -137,6 +145,6 @@ form textarea::placeholder {
   }
 
   input:focus {
-    color: #fff;
+    color: #81caff;
   }
 }

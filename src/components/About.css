@@ -29,7 +29,11 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: #222;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
   animation: liquidSwirl 10s infinite linear;
   pointer-events: none;
   z-index: 0;
@@ -116,7 +120,7 @@
 /* 🌙 Dark Mode */
 @media screen and (prefers-color-scheme: dark) {
   .about .container {
-    background: #222;
+    background: rgba(40, 40, 40, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
