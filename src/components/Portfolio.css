@@ -100,7 +100,7 @@ h2 {
 .project-card h3 {
   font-size: 1.5em;
   color: #222;
-  border-bottom: 1px solid #b8b8b8; /* Thin line */
+  border-bottom: 1px solid rgb(2, 51, 71, 0.5); /* Thin line */
   padding-bottom: 4px; /* Space between text and line */
 }
 
