@@ -34,12 +34,6 @@ form textarea::placeholder {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.2),
-    transparent 70%
-  );
-
 }
 
 /* 🏷️ Header */
