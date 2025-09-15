@@ -11,7 +11,7 @@ const About = () => (
           type="image/webp"
         />
         <img
-          src={require('../k_hawaii.webp')}
+          src={require('../relax_k.webp')}
           width="340"
           height="440"
           alt="Kiron Roy"
