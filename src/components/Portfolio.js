@@ -40,9 +40,9 @@ const projects = [
   },
   {
     id: 9,
-    title: 'Blog',
-    description: 'My blog created with Eleventy.',
-    link: 'https://kironroyblog.netlify.app/',
+    title: 'Dreamscape',
+    description: 'Limited art series.',
+    link: 'https://kironroy.dev/dreamscape',
   },
   {
     id: 10,
