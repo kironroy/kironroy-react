@@ -10,7 +10,7 @@ const projects = [
   {
     id: 3,
     title: 'Vincent\'s Visions',
-    description: 'A digital art series dedicated to Vincent Van Gogh.',
+    description: 'An art series dedicated to Vincent Van Gogh.',
     link: 'https://kironroy.dev/vincent',
   },
   {

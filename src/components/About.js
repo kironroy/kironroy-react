@@ -25,7 +25,7 @@ const About = () => (
           <a className="github-link" href="https://github.com/kironroy">
             Kiron Roy,
           </a>{' '}
-          a developer and creator. I specialize in web development and creative
+          a artist and developer. I specialize in web development and creative
           projects.
         </p>
         <p>Let’s connect—share your ideas!</p>
