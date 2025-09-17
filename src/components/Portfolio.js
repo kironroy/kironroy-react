@@ -9,9 +9,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Console',
-    description: "JavaScript's console.log() method.",
-    link: 'https://js-console-log.netlify.app/',
+    title: 'Vincent\'s Visions',
+    description: 'A digital art series dedicated to Vincent Van Gogh.',
+    link: 'https://kironroy.dev/vincent',
   },
   {
     id: 4,
