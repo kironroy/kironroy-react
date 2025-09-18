@@ -60,6 +60,11 @@
   backdrop-filter: blur(3px);
 }
 
+.github-link:hover {
+  color: var(--secondary-color-about);
+  text-decoration: underline;
+}
+
 /* 📝 Text Box */
 .about-text {
   background: rgba(255, 255, 255, 0.07);
