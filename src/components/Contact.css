@@ -140,7 +140,7 @@ form textarea::placeholder {
   .contact button {
     background: #cf6679;
     border: 2px solid #cf6679;
-    color: white;
+    color: #fff;
   }
 
   .contact button:hover {
