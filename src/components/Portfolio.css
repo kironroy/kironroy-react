@@ -120,7 +120,7 @@ p {
 }
 
 .project-card a:hover {
-  background: #f8482d;
+  background: var(--secondary-color-portfolio);
 }
 
 /* 📱 Mobile Tweaks */
