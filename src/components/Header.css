@@ -27,11 +27,11 @@
 }
 
 .header nav a {
-  color: #222;
   text-decoration: none;
   font-size: 28px;
   font-weight: 600;
-  background: #bbedc2;
+  color: #fff;
+  background: #003041;
   padding: 8px 14px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
@@ -39,8 +39,7 @@
 }
 
 .header nav a:hover {
-  background: #222;
-  color: #bbedc2;
+  background: #f8482d;
 }
 
 h1 {

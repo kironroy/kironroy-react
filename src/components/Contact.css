@@ -9,7 +9,7 @@
   margin: 20px auto 0 auto;
   padding: 40px 20px;
   text-align: center;
-  background: #ecf8ee;
+  background: #ecebeb;
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
   border-radius: 15px;
@@ -78,11 +78,11 @@ form textarea::placeholder {
 
 /* 🎯 Submit Button */
 .contact button {
-  background: #0f0f0f;
+  background: #001923;
   color: #fff;
   padding: 13px 15px;
   font-size: 1.2em;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #001923;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
@@ -94,8 +94,8 @@ form textarea::placeholder {
 
 /* 🪄 Hover Animation */
 .contact button:hover {
-  background: #ff9650;
-  border: 2px solid #ff9650;
+  background: #f8482d;
+  border: 2px solid #f8482d;
   color:#222;
 }
 
