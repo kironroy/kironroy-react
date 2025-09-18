@@ -1,6 +1,13 @@
+:root {
+  --primary-color-header: #003041;
+  --secondary-color-header: #f8482d;
+  --text-color-header: #2a2a2a;
+  --background-color-header: #e8feff;
+}
+
 .header {
-  background: #e8feff;
-  color: #fff;
+  background: var(--background-color-header);
+  color: var(--text-color-header);
   padding: 20px 0;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Safari support */
@@ -30,15 +37,15 @@
   font-size: 28px;
   font-weight: 600;
   color: #fff;
-  background: #003041;
- padding: 13px 28px;
+  background: var(--primary-color-header);
+  padding: 13px 28px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .header nav a:hover {
-  background: #f8482d;
+  background: var(--secondary-color-header);
 }
 
 h1 {

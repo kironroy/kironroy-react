@@ -1,6 +1,13 @@
 /* Header Styles */
+:root {
+  --primary-color-footer: #003041;
+  --secondary-color-footer: #f8482d;
+  --text-color-footer: #2a2a2a;
+  --background-color-footer: #e8feff;
+}
+
 .footer {
-  background: #e8feff;
+  background: var(--background-color-footer);
   padding: 20px 0;
   text-align: center;
   margin-top: 20px;
