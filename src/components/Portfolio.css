@@ -3,16 +3,12 @@
   --secondary-color-portfolio: #f8482d;
   --text-color-portfolio: #2a2a2a;
   --background-color-portfolio: #fff;
-  --card-blur: blur(2px) saturate(180%);
-  --card-radius: 15px;
-  --card-shadow-inset: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-  --card-shadow-outer: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 🎯 Layout Container */
 .portfolio .container {
   max-width: 1200px;
-  margin: 20px auto 0;
+  margin: 20px auto 0 auto;
   padding: 40px 20px;
   background: none;
   border-radius: 20px;
@@ -33,23 +29,21 @@ h2 {
   color: #333;
 }
 
-/* 💧 Project Card */
+/* 💧 Liquid Glass Project Card */
 .project-card {
   position: relative;
   background: var(--background-color-portfolio);
-  backdrop-filter: var(--card-blur);
+  /* Light mode fallback */
+  backdrop-filter: blur(2px) saturate(180%);
   border: 1px solid var(--background-color-portfolio);
-  border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow-inset), var(--card-shadow-outer);
+  border-radius: 15px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3),
+    /* subtle inner bottom highlight */ 0 2px 4px rgba(0, 0, 0, 0.1); /* smaller outer bottom shadow */
   overflow: hidden;
   padding: 20px;
 }
 
-.project-card > * {
-  position: relative;
-  z-index: 1;
-}
-
+/* ✨ Shimmer Animation (theme-aware) */
 .project-card::after {
   content: '';
   position: absolute;
@@ -58,13 +52,13 @@ h2 {
   width: 100%;
   height: 100%;
   background: #fff;
-  border-radius: var(--card-radius);
+  border-radius: 15px;
   opacity: 0.6;
   z-index: -1;
 }
 
-/* ✨ Theme-Aware Shimmer */
-@media (prefers-color-scheme: light) {
+/* 💡 Light Mode Shimmer */
+@media screen and (prefers-color-scheme: light) {
   .project-card::before {
     background: radial-gradient(
       circle at center,
@@ -74,7 +68,8 @@ h2 {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* 🌙 Dark Mode Shimmer */
+@media screen and (prefers-color-scheme: dark) {
   .project-card::before {
     background: radial-gradient(
       circle at center,
@@ -84,19 +79,24 @@ h2 {
   }
 }
 
-/* 🪟 Hover Effect */
+/* 🪟 Card Hover */
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: inset 0 0 0.8px rgba(255, 255, 255, 0.8),
     0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* 🧩 Card Content */
+/* 🧩 Content Layering */
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 .project-card h3 {
   font-size: 1.5em;
   color: #222;
-  border-bottom: 1px solid #cad3cc;
-  padding-bottom: 4px;
+  border-bottom: 1px solid #cad3cc; /* Thin line */
+  padding-bottom: 4px; /* Space between text and line */
 }
 
 p {
@@ -106,12 +106,13 @@ p {
 
 .project-card a {
   display: inline-block;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2em;
-  background: var(--primary-color-portfolio);
+  background: #003041;
   padding: 13px 28px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
@@ -123,7 +124,7 @@ p {
 }
 
 /* 📱 Mobile Tweaks */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .portfolio .container {
     padding: 20px 5px;
   }
@@ -139,20 +140,24 @@ p {
     font-size: 1em;
   }
 
+  .project-card {
+    padding: 20px;
+  }
+
   .project-card h3 {
     font-size: 1.3em;
   }
 }
 
-/* 🌙 Dark Mode Overrides */
-@media (prefers-color-scheme: dark) {
+/* 🌙 Dark Mode Container and Card Tweaks */
+@media screen and (prefers-color-scheme: dark) {
   .portfolio .container {
     background: linear-gradient(135deg, #1c1e26, #2a2b31);
   }
 
   .project-card {
     background: rgba(40, 40, 40, 0.2);
-    border-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #eee;
   }
 
@@ -160,13 +165,12 @@ p {
     background: rgba(40, 40, 40, 0.2);
   }
 
-  .project-card h3,
-  p {
+  .project-card h3 {
     color: #ccc;
   }
 
-  .project-card h3 {
-    border-bottom: 1px solid #5e5e5e;
+  p {
+    color: #ccc;
   }
 
   .project-card a {
@@ -181,5 +185,9 @@ p {
 
   h2 {
     color: #e4e4e4;
+  }
+
+  .project-card h3 {
+    border-bottom: 1px solid #5e5e5e; /* Thin line */
   }
 }
