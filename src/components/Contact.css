@@ -3,10 +3,10 @@
   font-family: 'Avenir LT Pro', sans-serif;
 }
 
-/* 📬 Contact Container with Liquid Glass Style */
+/* 📬 Contact Container */
 .contact .container {
   max-width: 600px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0;
   padding: 40px 20px;
   text-align: center;
   background: #ecebeb;
@@ -15,18 +15,11 @@
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3),
-    /* subtle inner bottom highlight */ 0 2px 4px rgba(0, 0, 0, 0.1); /* smaller outer bottom shadow */
+    0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
 
-/* Placeholder text */
-form input::placeholder,
-form textarea::placeholder {
-  color: rgb(0, 48, 68, 0.5);
-}
-
-/* ✨ Liquid shimmer layer */
 .contact .container::before {
   content: '';
   position: absolute;
@@ -36,20 +29,20 @@ form textarea::placeholder {
   height: 200%;
 }
 
-/* 🏷️ Header */
-.contact h2 {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 2em;
-  position: relative;
-  z-index: 1;
-}
-
 /* 📄 Form Layout */
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 🏷️ Header */
+.contact h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2em;
   position: relative;
   z-index: 1;
 }
@@ -76,6 +69,11 @@ form textarea::placeholder {
   color: #222;
 }
 
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(0, 48, 68, 0.5);
+}
+
 /* 🎯 Submit Button */
 .contact button {
   background: #001923;
@@ -92,24 +90,22 @@ form textarea::placeholder {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* 🪄 Hover Animation */
 .contact button:hover {
   background: #f8482d;
-  border: 2px solid #f8482d;
-  color:#222;
+  border-color: #f8482d;
+  color: #222;
 }
 
-/* 💻 Laptop-specific adjustments for Send button */
+/* 💻 Laptop-specific adjustments */
 @media screen and (min-width: 1024px) {
   .contact button {
-    padding: 16px 18px; /* slightly taller */
-    font-size: 1.3em;   /* slightly larger text */
+    padding: 16px 18px;
+    font-size: 1.3em;
   }
 }
 
-
 /* 🌙 Dark Mode */
-@media screen and (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .contact .container {
     background: rgba(40, 40, 40, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -119,33 +115,31 @@ form textarea::placeholder {
     color: #fff;
   }
 
-  /* Placeholder text */
-  form input::placeholder,
-  form textarea::placeholder {
-    color: rgba(204, 204, 204, 0.701);
-  }
-
   .contact label {
-  color: #ccc;
-}
-
+    color: #ccc;
+  }
 
   .contact input,
   .contact textarea {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
     background-color: rgba(35, 35, 35, 0.3);
     color: #fff;
   }
 
+  form input::placeholder,
+  form textarea::placeholder {
+    color: rgba(204, 204, 204, 0.7);
+  }
+
   .contact button {
     background: #cf6679;
-    border: 2px solid #cf6679;
+    border-color: #cf6679;
     color: #fff;
   }
 
   .contact button:hover {
     background: #bb86fc;
-    border: 2px solid #bb86fc;
+    border-color: #bb86fc;
   }
 
   input:focus {

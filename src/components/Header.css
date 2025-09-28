@@ -3,16 +3,19 @@
   --secondary-color-header: #f8482d;
   --text-color-header: #2a2a2a;
   --background-color-header: #e8feff;
+  --header-blur: blur(10px);
 }
 
+/* 🧭 Header Base */
 .header {
   background: var(--background-color-header);
   color: var(--text-color-header);
   padding: 20px 0;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  backdrop-filter: var(--header-blur);
+  -webkit-backdrop-filter: var(--header-blur);
 }
 
+/* 📦 Header Container */
 .header .container {
   width: 90%;
   margin: 0 auto;
@@ -21,6 +24,7 @@
   align-items: center;
 }
 
+/* 🧭 Navigation */
 .header nav ul {
   list-style: none;
   display: flex;
@@ -48,10 +52,13 @@
   background: var(--secondary-color-header);
 }
 
+/* 🏷️ Page Title */
 h1 {
-  color: #2a2a2a;
+  color: var(--text-color-header);
 }
-@media screen and (max-width: 768px) {
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
   .header .container {
     flex-direction: column;
     align-items: center;
@@ -64,20 +71,19 @@ h1 {
   }
 
   .header nav li {
-    margin: 0; /* Reset margin here */
+    margin: 0;
   }
 
   .header nav a {
     display: inline-block;
-    margin: 10px 0; /* Adds vertical space between buttons */
+    margin: 10px 0;
   }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+/* 🌙 Dark Mode */
+@media (prefers-color-scheme: dark) {
   .header {
     background: rgba(51, 51, 51, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     color: #fff;
   }
 
