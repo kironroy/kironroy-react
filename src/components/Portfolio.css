@@ -40,7 +40,7 @@ h2 {
   backdrop-filter: var(--card-blur);
   border: 1px solid var(--background-color-portfolio);
   border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow-inset), var(--card-shadow-outer);
+  /* box-shadow: var(--card-shadow-inset), var(--card-shadow-outer); */
   overflow: hidden;
   padding: 20px;
 }
@@ -128,8 +128,7 @@ p {
   border-bottom-color: #222;
   border-right-color: #222;
 
-  /* Optional texture overlay */
-  /* background-image: url('https://www.transparenttextures.com/patterns/black-linen.png'); */
+
   background-size: cover;
 }
 
