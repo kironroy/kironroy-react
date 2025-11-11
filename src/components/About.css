@@ -56,7 +56,8 @@
   text-decoration: none;
   color: var(--link-color);
   font-weight: 700;
-  backdrop-filter: blur(3px);
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-weight: 450;
 }
 
 .github-link:hover {
