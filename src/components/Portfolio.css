@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
-
 :root {
   --primary-color-portfolio: #003041;
   --secondary-color-portfolio: #f8482d;
@@ -33,11 +31,6 @@ h2 {
   text-align: center;
   font-size: 2em;
   color: #333;
-}
-
-p {
-  font-family: 'Edu NSW ACT Cursive', cursive;
-  font-weight: 450;
 }
 
 /* 💧 Project Card */
@@ -118,18 +111,15 @@ p {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2em;
-  background: linear-gradient(
-    145deg,
-    #003041,
-    #003d53
-  ); /* subtle metallic gradient */
+  background: linear-gradient(145deg, #003041, #003d53); /* subtle metallic gradient */
   padding: 13px 28px;
   border-radius: 8px;
   backdrop-filter: blur(4px);
 
   /* Enhanced shadow for depth */
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2),
-    /* inner highlight */ 0 4px 8px rgba(0, 0, 0, 0.3); /* outer shadow */
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.2), /* inner highlight */
+    0 4px 8px rgba(0, 0, 0, 0.3); /* outer shadow */
 
   /* Simulated bevel effect */
   border: 1px solid #444;
@@ -138,8 +128,10 @@ p {
   border-bottom-color: #222;
   border-right-color: #222;
 
+
   background-size: cover;
 }
+
 
 .project-card a:hover {
   background: var(--secondary-color-portfolio);

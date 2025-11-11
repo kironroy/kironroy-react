@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
-
 :root {
   --primary-color-about: #003041;
   --secondary-color-about: #f8482d;
@@ -12,6 +10,7 @@
   --box-shadow-inset: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
   --box-shadow-outer: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 /* 💧 Liquid Glass Container */
 .about .container {
@@ -77,8 +76,6 @@
   margin-bottom: 15px;
   font-size: 1.3em;
   line-height: 1.6;
-  font-family: 'Edu NSW ACT Cursive', cursive;
-  font-weight: 450;
   color: var(--text-base-color);
   text-align: justify;
   word-spacing: -1px;
